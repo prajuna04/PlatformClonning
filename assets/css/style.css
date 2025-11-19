@@ -284,6 +284,9 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
+  font-weight: bolder;
+    color: #0a2540;
+    font-size: larger;
 }
 
 /* Individual category cards */
