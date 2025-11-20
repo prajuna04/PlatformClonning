@@ -729,7 +729,7 @@ a {
 }
 
 .carousel-item img {
-  height: 180%;
+  /* height: 180%; */
   width: 100%;
   object-fit: cover;
   margin-top: 10px;
@@ -1786,18 +1786,21 @@ form {
 /* RESPONSIVE  */
 /* --- Navbar & Header --- */
 @media (max-width: 768px) {
+  .container-banner{
+   
+  }
   .burger-toggle {
     padding-left: 1rem;
     /* padding-right:-4px; */
   }
 
   .nav__logo img {
-    padding-left: 90px;
+    padding-left: 130px;
   }
 
   .searchBox i {
-    padding-left: 21px;
-    font-size: x-large;
+    padding-left: 100px;
+        font-size: x-large;
   }
 
   .dark-light i {
@@ -1825,17 +1828,14 @@ form {
     padding-left: 35px;
 
   }
-
   .post-card {
     flex-direction: column;
     align-items: center;
-
   }
 
   .post-img {
     /* width: 100%; */
     height: auto;
-
   }
 
   .post-content {
@@ -1876,11 +1876,11 @@ form {
 /* --- Carousel Section --- */
 @media (max-width: 768px) {
 
-  /* .carousel-item img{
-    width: 100%;
+ .carousel-item img{
+    max-width: 100%;
     height: auto;
-    margin-top: 20px;
-  } */
+   
+  } 
   .carousel-caption {
     padding: 60px 20px;
     text-align: center;
@@ -1893,7 +1893,12 @@ form {
   .carousel-caption p {
     font-size: 14px;
   }
-
+  .carousel{
+  width: calc(100% + 48px);
+        margin-left: -24px;
+        margin-right: -24px;
+        border-radius: 0;
+  }
 }
 
 /* --- Main Container (Posts + Sidebar) --- */
@@ -2117,6 +2122,77 @@ form {
   margin: 40px auto;
   padding: 0 20px;
 }
+.cs-sportwear-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.card-sport img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+.card-title1 {
+  font-size: 28px;
+  margin-top: 10px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/*=============== AUTHOR SECTION ===============*/
+.cs-entry__author-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #f8f9fa;
+  padding: 15px 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+.cs-entry__author-avatar img {
+  /* border-radius: 50%; */
+}
+
+.cs-entry__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cs-meta-author-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.cs-page__author-social-links a {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #555;
+}
+
+.cs-entry__header-infobar {
+  margin-left: auto;
+}
+
+.cs-entry__header-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.cs-entry__post-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cs-entry__post-meta i {
+  font-size: 18px;
+}
 
 /* Two-column layout area */
 .cs-entry__container {
@@ -2131,7 +2207,6 @@ form {
   flex: 0 0 68%;
   max-width: 68%;
 }
-
 .entry-content p,
 .entry-content h2,
 .entry-content h3,
@@ -2146,7 +2221,7 @@ form {
   flex: 0 0 32%;
   max-width: 32%;
   position: sticky;
-  top: 100px;
+  /* top: 100px; */
   height: fit-content;
 }
 
@@ -2170,8 +2245,10 @@ form {
   gap: 15px;
   margin-bottom: 25px;
   /* padding: 20px 0; */
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-right: 1px solid #e5e7eb;  /* only right border */
+  /* border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; */
+  height:40%;
 }
 
 .cs-entry__author-info {
@@ -2220,12 +2297,15 @@ form {
     border: 5px solid white;
     background-color: white;
     border-radius: 50px;
+    
 }
+
 .cs-entry__footer .cs-col-left {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: .5rem;
+    flex-direction: column;
 }
 .cs-entry__footer-date {
     display: flex;
@@ -2313,5 +2393,5 @@ form {
 .row{
   padding-left: 18px;
   padding-right: 18px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px;   */
 }
