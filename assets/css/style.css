@@ -252,8 +252,6 @@ a {
 .card {
   /* display:grid;
   height:auto; */
-  position: sticky;
-
 }
 
 .h5 .card-title {
@@ -784,12 +782,12 @@ a {
   gap: 2rem;
   padding: 2rem 4rem;
   /* position: sticky; */
-  position: relative;
   align-items: flex-start;
   /* prevents sidebar from stretching */
   gap: 2rem;
   /* optional spacing */
   background-color: #f1f5f9;
+  overflow:visible;
 }
 
 /* Left side (posts) */
@@ -879,6 +877,8 @@ a {
   padding: 0;
   margin: 0;
   height: fit-content;
+  position:relative;
+  overflow:visible !important;
 }
 
 .author-card {
@@ -1794,7 +1794,17 @@ form {
   margin-top: 80px;
   /* padding-left: 60px; */
 }
-
+.sticky-card{
+  position:sticky;
+  top: 20px; /* This is required for sticky to work */
+    z-index: 10;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 2rem; /* Add some space above */
+}
 .card-title1 {
   font-weight: 600;
   color: hsl(220, 48%, 28%);
@@ -2287,7 +2297,7 @@ form {
     /* width: 100%; */
     height: auto;
     padding-right: 60px;
-    position: sticky;
+   
   }
 
   .cs-footer {
