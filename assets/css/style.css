@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4rem;
   --cs-site-background: var(--cs-light-site-background, #f1f5f9);
   --first-color: hsl(220, 68%, 54%);
   --first-color-lighten: hsl(220, 68%, 97%);
@@ -57,19 +57,14 @@ body {
   padding-top: 90px;
 
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 .container-banner {
   background-color: #f1f5f9;
-
-
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -89,8 +84,6 @@ a {
   z-index: 9999;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  height: auto;
-  font-weight: 600;
   transition: none;
   z-index: auto;
 
@@ -100,6 +93,7 @@ a {
   /* background-color: #f1f5f9; */
   padding-left: 0px;
   padding-right: 0px;
+  
 }
 
 /*=============== NAV ===============*/
@@ -112,30 +106,29 @@ a {
   z-index: 1000;
   position: relative;
   border: 1px solid transparent;
+  padding: 10px 20px;
+  margin-top:8px;
+  margin-bottom: 10px;
 }
-
-nav:hover {
+.nav:hover {
   /* border: 0.5px solid #aaa; */
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 5px auto 0 auto;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right:10px;
+  
   /* transform: scale(0.98); */
   /* padding:0; */
 
 }
-
 .nav__data {
-  height: 80%;
+  /* height: 50%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:auto;
   /* background-color: #f1f5f9; */
+  
 }
-
 .nav__logo {
   display: inline-flex;
   align-items: center;
@@ -143,7 +136,6 @@ nav:hover {
   font-weight: var(--font-semi-bold);
   transition: color 0.3s;
 }
-
 .nav__logo a {
   align-items: center;
 }
@@ -180,7 +172,10 @@ nav:hover {
 }
 
 .nav__menu {
-  font-family: var(--cs-font-base-family), sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+
+  font-weight:800;
   justify-content: flex-start;
   /* padding:0px 20px; */
   flex: 4;
@@ -277,9 +272,10 @@ nav:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  font-weight: bolder;
+  font-weight:800;
   color: #0a2540;
-  font-size: larger;
+  font-size: 18px;
+  font-family: "Manrope" , sans-serif;
 }
 
 /* Individual category cards */
@@ -316,9 +312,11 @@ nav:hover {
 
 /* Description style */
 .categories-container p {
-  font-size: 0.875rem;
-  color: #555;
+  font-size: 16px;
+  color: #435366;
   line-height: 1.4;
+  font-weight:400;
+  font-family:"Inter", sans-serif;
 }
 
 .dropdown__content {
@@ -393,15 +391,13 @@ nav:hover {
 
 /* Nav */
 .nav {
-  height: calc(var(--header-height) + 2rem);
+  height: calc(var(--header-height) + 0.5rem);
   display: flex;
   justify-content: space-between;
 }
-
 .nav__toggle {
   display: none;
 }
-
 .nav__list {
   display: flex;
   column-gap: 1rem;
@@ -410,20 +406,16 @@ nav:hover {
   margin-top: 20px;
   padding-left: 20px;
 }
-
 .nav li {
   display: flex;
 }
-
 .nav__link {
   padding: 0;
 }
-
 .nav__link:hover {
   background-color: initial;
   color: #635bff;
 }
-
 /* Dropdown */
 .dropdown__button {
   column-gap: 0.25rem;
@@ -594,7 +586,9 @@ nav:hover {
   .searchBox i {
     color: var(--title-color);
     font-size: 1.2rem;
+    color:#435366;
   }
+
 
   /* hide inactive icons */
   /* .dark-light .sun {
@@ -770,7 +764,7 @@ nav:hover {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  height: 520px;
+  height: 510px;
 }
 
 .carousel-item img {
@@ -780,8 +774,11 @@ nav:hover {
   margin-top: 0;
   display: block;
   border-radius: 10px;
+   transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
 .carousel-caption {
   position: absolute;
   top: 60%;
@@ -817,17 +814,15 @@ nav:hover {
   padding: 10px;
   border-radius: 14px;
 }
-
 .thumb-slider img {
   width: 72px;
   height: 72px;
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 1;
   transition: 0.3s;
 }
-
 .swiper-slide {
   width: 100%;
   height: 100%;
@@ -836,7 +831,6 @@ nav:hover {
   display: block;
   flex-shrink: 1 !important;
 }
-
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -847,19 +841,16 @@ nav:hover {
   transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
   gap: 10px;
 }
-
 .swiper-slide-thumb-active img {
   opacity: 1;
   outline: 2px solid white;
 
 }
-
 /* Active */
 .swiper-slide-thumb-active img {
   opacity: 1;
   outline: 2px solid white;
 }
-
 /* Glass background */
 .thumb-slider {
   /* background: rgba(255,255,255,0.15); */
@@ -990,12 +981,13 @@ nav:hover {
   display: flex;
   gap: 1rem;
   font-size: 13px;
-  color: #666;
+  color: #435366;
   font-weight: 600;
   letter-spacing: -0.52px;
   line-height: 18.2px;
   min-height: 24px;
   row-gap: 8px;
+  font-family: "Inter",sans-serif;
   text-align: left;
 }
 
@@ -1177,12 +1169,13 @@ nav:hover {
   height: 40px;
   top: 50%;
   position: absolute;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
+  transform: translateY(50%);
+  background-color:#fff;
   border-radius: 50%;
   z-index: 10;
-  opacity: 1;
-
+  opacity: 0;
+  margin-left:60px;
+  margin-right:60px;
 }
 
 .carousel-control-prev-icon,
@@ -1190,13 +1183,16 @@ nav:hover {
   filter: invert(1);
   width: 18px;
   height: 18px;
-
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.container-banner:hover .carousel-control-prev,
+.container-banner:hover .carousel-control-next{
+  background-color: #fff;
+  opacity: 1;
+  pointer-events: auto;
+  
 }
+
 
 /* Smooth transition */
 .carousel-item-right {
@@ -1481,7 +1477,9 @@ body.dark-mode {
   background-color: #121212;
   color: #f1f1f1;
 }
-
+body.dark-mode .nav:hover{
+   background-color:#1f1f1f;
+}
 body.dark-mode .cs-header__burger-icon i {
   background-color: #fff;
 }
@@ -1657,6 +1655,9 @@ body.dark-mode .nav__logo img {
   transition: color 0.3s;
 
 }
+.dark-light .sun:hover{
+  color:hsl(220, 48%, 28%);
+}
 
 .dark-light.active {
   color: #f1f1f1;
@@ -1677,27 +1678,41 @@ body.dark-mode .nav__logo img {
   display: block;
   width: 80%;
   /* second line half width */
-  height: 3px;
+  height: 2px;
   background: #000;
   border-radius: 3px;
   transition: all 0.3s ease;
 }
-
+.cs-header__burger-icon i:nth-child(2) {
+  width: 50%;
+}
 /* Hover: expand second line */
 .cs-header__burger-icon:hover i:nth-child(2) {
-  width: 100%;
+  width: 80%;
 }
 
-/* Active: X button */
+.cs-header__burger-icon.active i {
+  width: 80%;
+  position: absolute;
+}
+
+.cs-header__burger-icon.active {
+  position: relative;
+}
+
 .cs-header__burger-icon.active i:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
-  width: 100%;
+  transform: rotate(45deg);
 }
 
 .cs-header__burger-icon.active i:nth-child(2) {
-  transform: translateY(-5px) rotate(-45deg);
-  width: 100%;
+  transform: rotate(-45deg);
 }
+/* Blue X on hover */
+.cs-header__burger-icon.active:hover i {
+  background-color: #2563eb; /* Blue */
+}
+
+
 
 
 /* .burger-toggle {
@@ -2034,11 +2049,12 @@ form {
 
 }
 
-.card-title1 {
+.card-title{
   font-weight: 600;
-  color: hsl(220, 48%, 28%);
+  color:#0a2540;
+  font-size: 18px;
   /* padding-left : 80px; */
-  font-size: xx-large;
+  
 
 }
 
@@ -2046,6 +2062,7 @@ form {
   font-size: 1rem;
   /* padding-left: 80px; */
   color: #435366;
+  
 }
 
 .cs-entry__author {
@@ -2063,7 +2080,7 @@ form {
 }
 
 .card-sport .card-title {
-  font-size: 2rem;
+  font-size: 18px;
 }
 
 /* ===================== Left Section ===================== */
@@ -2191,6 +2208,7 @@ form {
   margin-top: 10px;
   line-height: 1.2;
   font-weight: 600;
+  
 }
 
 /*=============== AUTHOR SECTION ===============*/
@@ -2533,7 +2551,11 @@ form {
   .searchBox i {
     display: flex;
     padding-left: 20px;
-    font-size: 1.2rem;
+    font-size: 16px;
+    font-weight:400;
+    color: #0a2540;
+    font-family:"Inter", sans-serif;
+
   }
 
   .right-btn {
