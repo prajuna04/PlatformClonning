@@ -20,18 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
   }
+
   const burger = document.getElementById("burgerToggle");
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
   });
-
   const burgerToggle = document.getElementById("burgerToggle");
   const burgerOverlay = document.getElementById("burgerOverlay");
-
   burgerToggle.addEventListener("click", () => {
     burgerOverlay.classList.toggle("active");
   });
-
+  
   // Optional: close when clicking outside or pressing ESC
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") burgerOverlay.classList.remove("active");
