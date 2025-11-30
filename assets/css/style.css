@@ -2718,52 +2718,44 @@ form {
   .nav {
     height: 60px;
     padding-left: 12px;
-
   }
-
   .nav__logo img {
     padding-left: 100px;
     height: auto;
     width: 100%;
   }
-
   .darkLight-searchBox {
     padding-left: 100px;
   }
-
   .searchBox i {
-    padding-left: 0%;
+    padding-left: 100%;
 
   }
-
   .right-btn {
     padding: 0.4rem 0.8rem;
     margin-left: 80px;
     font-size: 0.9rem;
     display: none;
   }
-
   .main-container {
-    padding: 0.8rem 10px;
+    padding: 0.3rem 10px;
   }
-
+  .carousel-item{
+    height:auto;
+  }
   .carousel-item img {
     height: 400px;
     width: 100%;
   }
-
   .post-img {
     height: 180px;
   }
-
   .carousel-caption {
     padding: 15px 10px;
   }
-
   .carousel-caption h5 {
     font-size: 14px;
   }
-
   .carousel-caption p {
     font-size: 12px;
   }
