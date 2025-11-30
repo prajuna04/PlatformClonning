@@ -31,13 +31,13 @@
                 <!-- Left Navigation -->
                 <aside class="burger-left">
                   <ul>
-                    <li class="active">Demos <i class="ri-arrow-right-s-line"></i>
+                    <li class="active" data-menu="home">Demos <i class="ri-arrow-right-s-line"></i>
                     </li>
-                    <li>Features<i class="ri-arrow-right-s-line"></i></li>
-                    <li>Lifestyle</li>
-                    <li>Trends<span class="new-tag">NEW</span></li>
-                    <li>Business</li>
-                    <li>Technologies</li>
+                    <li data-menu="features">Features<i class="ri-arrow-right-s-line"></i></li>
+                    <li data-menu="lifestyle">Lifestyle</li>
+                    <li data-menu="trends">Trends<span class="new-tag" style="border-radius:20px;">NEW</span></li>
+                    <li data-menu="business">Business</li>
+                    <li data-menu="technologies">Technologies</li>
                   </ul>
                 </aside>
                 <!-- Middle Submenu -->
@@ -51,15 +51,17 @@
                   </ul>
                 </div>
                 <!-- Features Submenu -->
-                <!-- <div class="burger-middle features-menu">
-      <ul>
-        <li>Post Header</li>
-        <li>Layouts</li>
-        <li>Post Formats</li>
-        <li>Auto Load Next Post</li>
-        <li>Featured Category</li>
-      </ul>
-    </div> -->
+               <!-- <div class="menu-content" data-menu="features">
+    <ul>
+      <li>Post Header</li>
+      <li>Layouts</li>
+      <li>Post Formats</li>
+      <li>Auto Load Next Post</li>
+      <li>Featured Category</li>
+    </ul>
+  </div> -->
+    
+    
                 <!-- Right Popular Section -->
                 <div class="burger-right">
                   <h5>Popular Now</h5>
@@ -154,7 +156,8 @@
                 <!--=============== DROPDOWN 2 ===============-->
                 <li class="dropdown__item categories">
                   <div class="nav__link dropdown__button">
-                    Categories <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    Categories 
+                    <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                   </div>
 
                   <div class="dropdown__container">

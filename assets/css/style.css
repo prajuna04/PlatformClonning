@@ -110,7 +110,7 @@ a {
   z-index: 1000;
   position: relative;
   border: 1px solid transparent;
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin-top: 8px;
   margin-bottom: 10px;
 }
@@ -120,10 +120,9 @@ a {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  /* transform: scale(0.98); */
-  /* padding:0; */
-
+  max-width:1240px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .nav__data {
@@ -254,7 +253,7 @@ a {
   top: 100%;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #f1f5f9;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(255, 253, 253, 0.1);
@@ -282,7 +281,7 @@ a {
 .dropdown__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .h5 .card-title {
@@ -300,7 +299,7 @@ a {
   text-align: center;
   padding: 1.5rem;
   border-radius: 12px;
-  background-color: #f1f5f9;
+  background-color:#ffff;
   transition: all 0.3s ease;
 }
 
@@ -717,15 +716,16 @@ a {
   position: fixed;
   top: 5rem;
   left: 0;
-  width: 92%;
+  width: 90%;
   z-index: 2000;
   display: none;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 12px 12px;
-  padding: 12px 0;
-  margin-left:55px;
-  margin-right: 10px;
-  gap:1rem;
+  border-radius: 12px;
+  padding: 16px 16px;
+  margin-left:50px;
+  /* margin-right: 10px; */
+  gap:0.5rem;
+  background-color: #f8f9fa;
  
 }
 
@@ -1077,20 +1077,17 @@ a {
   font-size: 20px;
   font-weight: 800;
 }
-
 .author-card h4 {
   font-size: 14px;
   font-weight: 800;
-  color: #435366;
+  /* color: #435366; */
 }
-
 .author-img {
   width: 80px;
   height: 80px;
   border-radius: 10%;
   margin-bottom: 1rem;
 }
-
 .author-socials {
   display: flex;
   gap: 0.8rem;
@@ -1099,18 +1096,14 @@ a {
   /* color: #4957a8; */
   border-radius: 25px;
 }
-
 .work-item {
   border-bottom: 1px solid #eee;
   padding: 0.5rem 0;
   color: #0a2540;
 }
-
 .work-item p {
   font-size: .75em;
-
 }
-
 .hire-status {
   margin-top: 1.5rem;
   color: #16a34a;
@@ -1125,14 +1118,12 @@ a {
   margin-right: auto;
   padding-left: 5rem;
 }
-
 .hire-status .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #16a34a;
 }
-
 .btn-touch {
   margin-top: 1rem;
   /* keep a little gap above button */
@@ -1147,7 +1138,6 @@ a {
   font-weight: 600;
   width: 100%;
 }
-
 .btn-touch:hover {
   background: #2563eb;
 }
@@ -1269,6 +1259,7 @@ a {
   background-color: transparent;
   transition: color .25s;
 }
+
 
 .explore-category {
   color: rgb(67, 83, 102);
@@ -1500,9 +1491,6 @@ footer {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* header nav :hover{
-  background-color:white;
-} */
 /*  DARK MODE */
 
 /* header.dark-mode{
@@ -1527,7 +1515,7 @@ body.dark .dark-light {
 }
 
 body.dark-mode {
-  background-color: #121212;
+  background-color: #1f1f1f;
   color: #f1f1f1;
 }
 
@@ -1538,7 +1526,10 @@ body.dark-mode .nav:hover {
 body.dark-mode .cs-header__burger-icon i {
   background-color: #fff;
 }
-
+ body.dark-mode  .card-title,
+ .span{
+  color:#fff;
+} 
 /* Navbar dark mode */
 body.dark-mode nav {
   background-color: #1f1f1f;
@@ -1616,12 +1607,12 @@ body.dark-mode .dropdown__container,
 body.dark-mode .dropdown__content,
 body.dark-mode .container-banner,
 body.dark-mode .main-container {
-  background-color: #222;
+  background-color: #1f1f1f;
   color: #f1f1f1;
 }
 
 body.dark-mode .container {
-  background-color: #222;
+  background-color: #1f1f1f;
 }
 
 body.dark-mode .categories-container h3,
@@ -1817,8 +1808,6 @@ body.dark-mode .nav__logo img {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
-
 }
 
 /* Active state */
@@ -2705,7 +2694,6 @@ form {
 
 /* --- 480px (Small Mobile) --- */
 @media screen and (max-width: 425px) {
-
   .nav {
     height: 60px;
     padding-left: 12px;
